@@ -1,0 +1,31 @@
+{
+  "name": "astrosoftware",
+  "version": "1.0.0",
+  "description": "Astrology software",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --watch src --exec ts-node src/main.ts",
+    "build:prod": "npm run build-ts && npm run clean:dist && npm run tslint && webpack",
+    "build": "npm run clean:dist && npm run build-ts && npm run tslint",
+    "build-ts": "tsc",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "clean:dist": "rimraf dist"
+  },
+  "author": "Sathish Kumar N <nsathishkumarnagarajan@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@types/cors": "^2.8.6",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.7",
+    "@types/node": "^14.0.26",
+    "ts-node": "^8.10.2",
+    "tslint": "^6.1.2",
+    "typescript": "^3.9.7"
+  }
+}
