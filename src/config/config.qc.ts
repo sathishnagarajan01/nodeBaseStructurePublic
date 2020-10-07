@@ -2,11 +2,11 @@ export class QcConfig {
 
     public DbConnectionString() {
         return {
-            url: '104.211.227.3',
-            user: 'wegotdev3',
-            password: 'wegot@DB3',
+            url: '192.168.1.1',
+            user: 'test',
+            password: 'test',
             port: 3306,
-            database: "we2db"
+            database: "dbname"
         };
     }
 
