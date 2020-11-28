@@ -3,7 +3,7 @@ import { Api } from './Api';
 
 require('dotenv').config();
 let environment: string = process.env.NODE_ENV;
-console.log("Current env: "+ process.env.NODE_ENV);
+// console.log("Current env: "+ process.env.NODE_ENV);
 envConfig.setEnvironment(environment);
 const api = new Api();
 api.run();

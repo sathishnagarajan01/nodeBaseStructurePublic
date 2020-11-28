@@ -1,4 +1,5 @@
 import { Request, Response, NextFunction, Router } from 'express';
+import { ResponseApi } from '../response/responseApi';
 export class DashboardController {
     public static baseRoute = '/dashboard';
     public router: Router = Router();
@@ -8,6 +9,6 @@ export class DashboardController {
     }
 
     private helloworld(req: Request, res: Response, next: NextFunction) {
-        res.status(200).send('Hello world');
+        ResponseApi.ok(req, res, 'Hello World');
     }
 }

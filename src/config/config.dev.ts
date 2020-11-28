@@ -2,11 +2,11 @@ export class DevConfig {
 
     public DbConnectionString() {
         return {
-            url: '192.168.1.1',
-            user: 'test',
-            password: 'test',
+            url: '127.0.0.1',
+            user: 'admin',
+            password: 'admin',
             port: 3306,
-            database: "dbname"
+            database: "db"
         };
     }
 
